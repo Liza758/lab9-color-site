@@ -1,0 +1,47 @@
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;line-height:1.6}
+header,footer{background:#f2f2f2;padding:10px;text-align:center}
+nav a{margin:0 10px;text-decoration:none;color:#333}
+main{padding:20px}
+.button{display:inline-block;background:#333;color:#fff;padding:10px 15px;text-decoration:none}
+.responsive-img{max-width:100%;height:auto}
+@media(max-width:600px){nav a{display:block;margin:5px 0}}
+
+@media (max-width: 768px){
+header,nav,main,footer{padding:15px}
+h1{font-size:28px}
+h2{font-size:22px}
+p{font-size:16px;line-height:1.6}
+img{max-width:100%;height:auto}
+}
+
+header{display:flex;align-items:center}
+header img{width:60px;height:auto;margin-right:20px}
+
+html,body{min-height:100vh}
+body{display:flex;flex-direction:column}
+main{flex:1}
+footer{margin-top:auto}
+
+@media (max-width: 768px){
+header{flex-direction:column;align-items:flex-start}
+header img{width:50px;margin-bottom:10px}
+nav,main,footer{padding:15px}
+h1{font-size:28px}
+h2{font-size:22px}
+p{font-size:16px;line-height:1.6}
+}
+
+.btn{
+background:linear-gradient(270deg,#ff0000,#ff9900,#ffee00,#33cc33,#3399ff,#9933ff,#ff3399);
+background-size:1400% 1400%;
+animation:rainbow 6s ease infinite;
+color:#fff;
+border:none;
+}
+@keyframes rainbow{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
